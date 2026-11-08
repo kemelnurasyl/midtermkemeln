@@ -260,3 +260,99 @@
     grid-column: auto;
   }
 }
+
+@media screen and (max-width: 480px) {
+
+  .et-panel h3 {
+    font-size: 18px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .et-panel {
+    padding: 16px !important;
+  }
+
+  .et-panel .form-label {
+    font-size: 13px !important;
+  }
+
+  .et-panel .form-control,
+  .et-panel .form-select {
+    font-size: 14px !important;
+    padding: 10px !important;
+    height: 46px !important;
+    min-height: 46px !important;
+  }
+
+  .et-total {
+    padding: 14px !important;
+  }
+
+  .et-total strong {
+    font-size: 19px !important;
+  }
+
+  .et-note {
+    font-size: 11px !important;
+  }
+}
+
+/* FIX: Ticket number visibility */
+
+#ticketQuantity {
+    color: #081c34 !important;
+    -webkit-text-fill-color: #081c34 !important;
+    background-color: #ffffff !important;
+    opacity: 1 !important;
+    font-size: 16px !important;
+    caret-color: #081c34 !important;
+}
+
+#ticketQuantity:focus {
+    color: #081c34 !important;
+    -webkit-text-fill-color: #081c34 !important;
+    background-color: #ffffff !important;
+}
+#ticketType,
+#ticketType:focus,
+#ticketType option {
+    color: #081c34 !important;
+    -webkit-text-fill-color: #081c34 !important;
+    background-color: #ffffff !important;
+    opacity: 1 !important;
+    font-size: 16px !important;
+}
+
+#ticketType {
+    appearance: auto;
+    -webkit-appearance: auto;
+}
+
+.ticket-stepper {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.ticket-stepper #ticketQuantity {
+  flex: 1 1 0;
+  min-width: 0;
+  width: auto !important;
+  text-align: center;
+}
+
+.ticket-stepper button {
+  width: 44px;
+  min-width: 44px;
+  border: none;
+  border-radius: 8px;
+  background: #147ee6;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ticket-stepper button:hover {
+  background: #0759aa;
+}
